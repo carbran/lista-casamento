@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Casamento</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header com Foto e Títulos -->
+    <header class="header-container">
+        <div class="header-img-wrapper">
+            <img src="header-lista-casamento.jpeg" alt="Foto do Casal" class="header-img">
+        </div>
+        <div class="header-content">
+            <h1>Lista de Presentes</h1>
+            <p class="subtitle">Sugestão de sites para comprar os itens da lista. Você pode comprar no site sugerido ou outro a sua escolha e escolher a melhor forma de pagamento para vocês.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Endereço -->
+    <section class="address-section">
+        <div class="address-card">
+            <h3><i class="fa-solid fa-location-dot"></i> Nosso Endereço para Entrega</h3>
+            <p id="address-text">Rua Exemplo, 123 - Apto 402 - Bairro Jardim - Cidade/UF - CEP: 12345-678</p>
+            <button id="copy-btn" onclick="copyAddress()">
+                <i class="fa-regular fa-copy"></i> Copiar Endereço
+            </button>
+            <span id="copy-feedback" style="display:none; color: #2e7d32; font-size: 14px; margin-top: 8px;">Endereço copiado com sucesso!</span>
+        </div>
+    </section>
+
+    <!-- Filtros por Categoria -->
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterItems('TODOS')">Todos</button>
+        <button class="filter-btn" onclick="filterItems('COZINHA')">Cozinha</button>
+        <button class="filter-btn" onclick="filterItems('ELETRODOMESTICOS')">Eletrodomésticos</button>
+        <button class="filter-btn" onclick="filterItems('QUARTOS')">Quartos</button>
+        <button class="filter-btn" onclick="filterItems('SALA E COZINHA')">Sala e Cozinha</button>
+        <button class="filter-btn" onclick="filterItems('banheiro')">Banheiro</button>
+    </div>
+
+    <!-- Lista de Cards -->
+    <main class="main-container">
+        <div id="cards-grid" class="cards-grid">
+            <!-- Os cards serão inseridos dinamicamente via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Com amor, os Noivos ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
