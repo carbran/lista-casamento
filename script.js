@@ -1,4 +1,4 @@
-// Dados importados da planilha convertidos para JSON
+// Dados importados da planilha convertidos para JSON com imagens locais correspondentes
 const giftsData = [
     { id: 1, area: 'COZINHA', name: 'JOGO DE TALHERES 91 PEÇAS', price: 'R$ 472,39', link: 'https://tramontina.com.br/faqueiro-tramontina-laguna-em-aco-inox-com-facas-de-churrasco-acabamento-em-brilho-com-detalhes-no-cabo-91-pecas/66906890.html' },
     { id: 2, area: 'COZINHA', name: 'Aparelho de Jantar Flávia Em Porcelana 20 peças Tramontina', price: 'R$ 228,32', link: 'https://www.mercadolivre.com.br/aparelho-de-jantar-flavia-em-porcelana-20-pecas-tramontina/p/MLB51226715' },
@@ -19,42 +19,36 @@ const giftsData = [
     { id: 17, area: 'COZINHA', name: 'Jogo Americano com Guardanapo', price: 'R$ 130,00', link: 'https://shopee.com.br/product/744202889/57308351322' },
     { id: 18, area: 'COZINHA', name: 'Toalha De Mesa Xadrez Bege E Off White', price: 'R$ 180,00', link: 'https://www.mercadolivre.com.br/toalha-de-mesa-xadrez-bege-e-off-white-ret-210m-x-140m/p/MLB65892619' },
     { id: 19, area: 'COZINHA', name: 'Jogo de Xícaras COM PIRES 12 Peças', price: 'R$ 80,00', link: 'https://shopee.com.br/product/1040358773/22099690631' },
-    { id: 20, area: 'COZINHA', name: 'Mesa de Jantar Liz 120cm Tampo', price: 'R$ 520,00', link: 'https://shopee.com.br/product/1033307532/20799848459' },
-    { id: 21, area: 'COZINHA', name: 'Kit 4 Capas De Almofada', price: 'R$ 70,00', link: 'https://produto.mercadolivre.com.br/MLB-5138069141-kit-4-capas-de-almofada-linho-premiun' },
-    { id: 22, area: 'COZINHA', name: 'Omeleteira Easy Omelet Mondial', price: 'R$ 150,00', link: 'https://www.mercadolivre.com.br/omeleteira-easy-omelet-mondial-800w-om-02/p/MLB29601906' },
-    { id: 23, area: 'ELETRODOMESTICOS', name: 'Fogão 4 Bocas de Embutir Dako Supreme Mesa de Vidro', price: 'R$ 2.734,00', link: 'https://www.amazon.com.br/Fog%C3%A3o-Embutir-Dako-Supreme-Bivolt/dp/B0FVJFTS1D' },
-    { id: 24, area: 'ELETRODOMESTICOS', name: 'Geladeira Panasonic BB65 Espelhada Inverse Frost Free 467L', price: 'R$ 4.859,10', link: 'https://www.magazineluiza.com.br/geladeira-panasonic-bb65-espelhada-inverse-frost-free-467-litros-inverter' },
-    { id: 25, area: 'ELETRODOMESTICOS', name: 'Micro-ondas Electrolux 23L Preto Efficient', price: 'R$ 599,00', link: 'https://www.amazon.com.br/Micro-ondas-Bancada-Electrolux-Efficient-ME23P/dp/B0B8LCYYX7' },
-    { id: 26, area: 'ELETRODOMESTICOS', name: 'Fritadeira Air Fryer Forno Oven 12L Mondial', price: 'R$ 689,00', link: 'https://www.amazon.com.br/Fritadeira-Fryer-Forno-Mondial-Preto/dp/B0BZJDB39Z' },
-    { id: 27, area: 'ELETRODOMESTICOS', name: 'Cafeteira Elétrica Electrolux Inox com Timer 1,5L', price: 'R$ 249,87', link: 'https://www.amazon.com.br/Electrolux-ECM30-Cafeteira/dp/B09CC2RYTZ' },
-    { id: 28, area: 'ELETRODOMESTICOS', name: 'Lava Louças Electrolux 14 Serviços Preta', price: 'R$ 4.999,00', link: 'https://www.amazon.com.br/Lou%C3%A7as-Electrolux-Servi%C3%A7os-Fun%C3%A3o-Higienizar/dp/B09BBNL8MV' },
-    { id: 29, area: 'ELETRODOMESTICOS', name: 'Lava e Seca Samsung 11kg', price: 'R$ 8.799,00', link: 'https://www.magazineluiza.com.br/lava-e-seca-samsung-11kg' },
-    { id: 30, area: 'ELETRODOMESTICOS', name: 'Ar Condicionado Bi Split Inverter LG 9000 e 12000 BTUs', price: 'R$ 4.679,10', link: 'https://www.amazon.com.br/Condicionado-Split-Inverter-LG-S32Q16UAGA0' },
-    { id: 31, area: 'ELETRODOMESTICOS', name: 'Mixer 3 em 1 Electrolux Preto 400W TruFlow', price: 'R$ 179,00', link: 'https://www.mercadolivre.com.br/mixer-3-em-1-electrolux-preto-400w-com-tecnologia-truflow-eib10-220v/p/MLB18455412' },
-    { id: 32, area: 'QUARTOS', name: 'Cama Box Baú Casal Bipartido Colchão Comfort Class', price: 'R$ 2.104,21', link: 'https://www.magazineluiza.com.br/cama-box-bau-casal-bipartido-colchao-comfort-class' },
-    { id: 33, area: 'QUARTOS', name: 'Jogo De Cama Casal 4 Peças 100% Algodão', price: 'R$ 275,90', link: 'https://www.mercadolivre.com.br/jogo-de-cama-casal-4-pecas-karsten-160-fios-100-algodao' },
-    { id: 34, area: 'QUARTOS', name: 'Kit 4 Travesseiro Ortobom Percal 200 Fios', price: 'R$ 192,53', link: 'https://www.mercadolivre.com.br/kit-4-travesseiro-ortobom-percal-200-fios-100-algodao-cor-branco/p/MLB24864789' },
-    { id: 35, area: 'QUARTOS', name: 'Saia Box Casal', price: 'R$ 50,00', link: 'https://www.magazineluiza.com.br/saia-box-casal-padrao-matelado-ultra-quadriculada' },
-    { id: 36, area: 'SALA E COZINHA', name: 'SOFA 3 LUGARES CINZA', price: 'R$ 1.056,30', link: 'https://www.americanas.com.br/produto/3464181006/sofa-cama-3-lugares-casal-premium' },
-    { id: 37, area: 'SALA E COZINHA', name: 'Mesa de Jantar Liz 120cm', price: 'R$ 519,99', link: 'https://www.panoramamoveis.com.br/mesa-de-jantar-8-lugares-malvinas-com-vidro-mel-cinza' },
-    { id: 38, area: 'SALA E COZINHA', name: 'Vision AI TV 50 polegadas QLED 4K QEF1', price: 'R$ 3.483,00', link: 'https://www.samsung.com/br/tvs/qled-tv/qef1-50-inch-qled-4k-smart-tv-qn50qef1agxzd/' },
-    { id: 39, area: 'banheiro', name: 'Jogo de toalha de banho e rosto 100% Algodão', price: 'R$ 194,00', link: 'https://www.casasbahia.com.br/jogo-de-toalha-de-banho-e-rosto-100-algodao-karsten-yuna' },
-    { id: 40, area: 'banheiro', name: 'Toalheiro Elétrico Alumínio Toalhas', price: 'R$ 255,00', link: 'https://produto.mercadolivre.com.br/MLB-1015598184-toalheiro-eletrico-aluminio-toalhas' },
-    { id: 41, area: 'banheiro', name: 'Kit 4 Cadeiras de Jantar Savana Estofada', price: 'R$ 988,41', link: 'https://shopee.com.br/product/1779492848/58217863648' }
+    { id: 20, area: 'COZINHA', name: 'Kit 4 Capas De Almofada', price: 'R$ 70,00', link: 'https://produto.mercadolivre.com.br/MLB-5138069141-kit-4-capas-de-almofada-linho-premiun' },
+    { id: 21, area: 'COZINHA', name: 'Omeleteira Easy Omelet Mondial', price: 'R$ 150,00', link: 'https://www.mercadolivre.com.br/omeleteira-easy-omelet-mondial-800w-om-02/p/MLB29601906' },
+    { id: 22, area: 'ELETRODOMESTICOS', name: 'Fogão 4 Bocas de Embutir Dako Supreme Mesa de Vidro', price: 'R$ 2.734,00', link: 'https://www.amazon.com.br/Fog%C3%A3o-Embutir-Dako-Supreme-Bivolt/dp/B0FVJFTS1D' },
+    { id: 23, area: 'ELETRODOMESTICOS', name: 'Geladeira Panasonic BB65 Espelhada Inverse Frost Free 467L', price: 'R$ 4.859,10', link: 'https://www.magazineluiza.com.br/geladeira-panasonic-bb65-espelhada-inverse-frost-free-467-litros-inverter' },
+    { id: 24, area: 'ELETRODOMESTICOS', name: 'Fritadeira Air Fryer Forno Oven 12L Mondial', price: 'R$ 689,00', link: 'https://www.amazon.com.br/Fritadeira-Fryer-Forno-Mondial-Preto/dp/B0BZJDB39Z' },
+    { id: 25, area: 'ELETRODOMESTICOS', name: 'Cafeteira Elétrica Electrolux Inox com Timer 1,5L', price: 'R$ 249,87', link: 'https://www.amazon.com.br/Electrolux-ECM30-Cafeteira/dp/B09CC2RYTZ' },
+    { id: 26, area: 'ELETRODOMESTICOS', name: 'Lava Louças Electrolux 14 Serviços Preta', price: 'R$ 4.999,00', link: 'https://www.amazon.com.br/Lou%C3%A7as-Electrolux-Servi%C3%A7os-Fun%C3%A3o-Higienizar/dp/B09BBNL8MV' },
+    { id: 27, area: 'ELETRODOMESTICOS', name: 'Lava e Seca Samsung 11kg', price: 'R$ 8.799,00', link: 'https://www.magazineluiza.com.br/lava-e-seca-samsung-11kg' },
+    { id: 28, area: 'ELETRODOMESTICOS', name: 'Ar Condicionado Bi Split Inverter LG 9000 e 12000 BTUs', price: 'R$ 4.679,10', link: 'https://www.amazon.com.br/Condicionado-Split-Inverter-LG-S32Q16UAGA0' },
+    { id: 29, area: 'ELETRODOMESTICOS', name: 'Mixer 3 em 1 Electrolux Preto 400W TruFlow', price: 'R$ 179,00', link: 'https://www.mercadolivre.com.br/mixer-3-em-1-electrolux-preto-400w-com-tecnologia-truflow-eib10-220v/p/MLB18455412' },
+    { id: 30, area: 'QUARTOS', name: 'Cama Box Baú Casal Bipartido Colchão Comfort Class', price: 'R$ 2.104,21', link: 'https://www.magazineluiza.com.br/cama-box-bau-casal-bipartido-colchao-comfort-class' },
+    { id: 31, area: 'QUARTOS', name: 'Jogo De Cama Casal 4 Peças 100% Algodão', price: 'R$ 275,90', link: 'https://www.mercadolivre.com.br/jogo-de-cama-casal-4-pecas-karsten-160-fios-100-algodao' },
+    { id: 32, area: 'QUARTOS', name: 'Kit 4 Travesseiro Ortobom Percal 200 Fios', price: 'R$ 192,53', link: 'https://www.mercadolivre.com.br/kit-4-travesseiro-ortobom-percal-200-fios-100-algodao-cor-branco/p/MLB24864789' },
+    { id: 33, area: 'QUARTOS', name: 'Saia Box Casal', price: 'R$ 50,00', link: 'https://www.magazineluiza.com.br/saia-box-casal-padrao-matelado-ultra-quadriculada' },
+    { id: 34, area: 'SALA', name: 'SOFA 3 LUGARES CINZA', price: 'R$ 1.056,30', link: 'https://www.americanas.com.br/produto/3464181006/sofa-cama-3-lugares-casal-premium' },
+    { id: 35, area: 'SALA', name: 'Mesa de Jantar Liz 120cm', price: 'R$ 520,00', link: 'https://shopee.com.br/product/1033307532/20799848459' },
+    { id: 36, area: 'SALA', name: 'Kit 4 Cadeiras de Jantar Savana Estofada', price: 'R$ 988,41', link: 'https://shopee.com.br/product/1779492848/58217863648' },
+    { id: 37, area: 'SALA', name: 'Vision AI TV 50 polegadas QLED 4K QEF1', price: 'R$ 3.483,00', link: 'https://www.samsung.com/br/tvs/qled-tv/qef1-50-inch-qled-4k-smart-tv-qn50qef1agxzd/' },
+    { id: 38, area: 'BANHEIRO', name: 'Jogo de toalha de banho e rosto 100% Algodão', price: 'R$ 194,00', link: 'https://www.casasbahia.com.br/jogo-de-toalha-de-banho-e-rosto-100-algodao-karsten-yuna' },
+    { id: 39, area: 'BANHEIRO', name: 'Toalheiro Elétrico Alumínio Toalhas', price: 'R$ 255,00', link: 'https://produto.mercadolivre.com.br/MLB-1015598184-toalheiro-eletrico-aluminio-toalhas' },
+    { id: 40, area: 'ELETRODOMESTICOS', name: 'Robô Aspirador Electrolux 4 em 1', price: 'R$ 1.379,90', link: 'https://www.casasbahia.com.br/robo-aspirador-electrolux-4-em-1-wi-fi-experience-ate-1h40-mapeamento-cinza-erb61-1576506970.html'},
+    { id: 41, area: 'ELETRODOMESTICOS', name: 'Multiprocessador', price: 'R$ 329,90', link: 'https://www.mercadolivre.com.br/multiprocessador-walita-preto-1000w-hr730492/p/MLB66418382?pdp_filters=item_id%3AMLB6530548380&from=gshop&matt_tool=74738421&matt_word=&matt_source=google&matt_campaign_id=22090354220&matt_ad_group_id=197094184531&matt_match_type=&matt_network=g&matt_device=c&matt_creative=792355617054&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735125422&matt_product_id=MLB66418382-product&matt_product_partition_id=2687566804952&matt_target_id=aud-2493968549214:pla-2687566804952&cq_src=google_ads&cq_cmp=22090354220&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090354220&gclid=Cj0KCQjwxKfWBhDkARIsAMKwkNZcn8AabvTEdedjtkN7ZM9jO62COEe0-q73qO6xovoyyctVATybbhIaAqTREALw_wcB'}
 ];
 
-// Ícones/Imagens genéricas ilustrativas para os cards caso o link não tenha imagem direta
-function getCardImage(category) {
-    return 'https://cdn-icons-png.flaticon.com/512/1041/1041916.png';
-}
-
-// Renderizar Cards
 function renderGifts(filter = 'TODOS') {
     const grid = document.getElementById('cards-grid');
     grid.innerHTML = '';
 
-    const filtered = filter === 'TODOS' 
-        ? giftsData 
+    const filtered = filter === 'TODOS'
+        ? giftsData
         : giftsData.filter(item => item.area.toUpperCase() === filter.toUpperCase());
 
     if (filtered.length === 0) {
@@ -66,9 +60,12 @@ function renderGifts(filter = 'TODOS') {
         const card = document.createElement('div');
         card.className = 'gift-card';
 
+        // Usa a imagem correspondente na pasta imagens_produtos/
+        const imagePath = `assets/produto_${gift.id}.png`;
+
         card.innerHTML = `
             <div class="card-img-container">
-                <img src="${getCardImage(gift.area)}" alt="${gift.name}">
+                <img src="${imagePath}" alt="${gift.name}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1041/1041916.png'">
             </div>
             <div class="card-info">
                 <span class="item-name">${gift.name}</span>
@@ -85,14 +82,12 @@ function renderGifts(filter = 'TODOS') {
     });
 }
 
-// Função de Filtro
 function filterItems(category) {
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
     renderGifts(category);
 }
 
-// Copiar Endereço
 function copyAddress() {
     const addressText = document.getElementById('address-text').innerText;
     navigator.clipboard.writeText(addressText).then(() => {
@@ -106,7 +101,6 @@ function copyAddress() {
     });
 }
 
-// Inicializar carregamento
 document.addEventListener('DOMContentLoaded', () => {
     renderGifts('TODOS');
 });
