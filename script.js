@@ -1,7 +1,7 @@
 // Dados importados da planilha convertidos para JSON com imagens locais correspondentes
 const giftsData = [
     { id: 1, area: 'COZINHA', name: 'JOGO DE TALHERES 91 PEÇAS', price: 'R$ 472,39', link: 'https://tramontina.com.br/faqueiro-tramontina-laguna-em-aco-inox-com-facas-de-churrasco-acabamento-em-brilho-com-detalhes-no-cabo-91-pecas/66906890.html' },
-    { id: 2, area: 'COZINHA', name: 'Aparelho de Jantar Flávia Em Porcelana 20 peças Tramontina', price: 'R$ 228,32', link: 'https://www.mercadolivre.com.br/aparelho-de-jantar-flavia-em-porcelana-20-pecas-tramontina/p/MLB51226715' },
+    // { id: 2, area: 'COZINHA', name: 'Aparelho de Jantar Flávia Em Porcelana 20 peças Tramontina', price: 'R$ 228,32', link: 'https://www.mercadolivre.com.br/aparelho-de-jantar-flavia-em-porcelana-20-pecas-tramontina/p/MLB51226715' },
     { id: 3, area: 'COZINHA', name: 'JOGO DE TAÇAS 12 PEÇAS', price: 'R$ 91,00', link: 'https://www.mercadolivre.com.br/kit-12-tacas-de-vinho-nadir-barone-385ml-vidro-transparente/p/MLB25336086' },
     { id: 4, area: 'COZINHA', name: 'JOGO DE COPOS 12 PEÇAS', price: 'R$ 74,99', link: 'https://www.mercadolivre.com.br/conjunto-12-copos-long-drink-cylinder-300ml-nadir-figueiredo/p/MLB36060510' },
     { id: 5, area: 'COZINHA', name: 'KIT 6 ASSADEIRAS MARINEX', price: 'R$ 228,63', link: 'https://www.mercadolivre.com.br/conjunto-assadeiras-6-pecas-de-vidro-com-tampa-cinza-marinex/p/MLB28025230' },
@@ -26,7 +26,7 @@ const giftsData = [
     { id: 24, area: 'ELETRODOMESTICOS', name: 'Fritadeira Air Fryer Forno Oven 12L Mondial', price: 'R$ 689,00', link: 'https://www.amazon.com.br/Fritadeira-Fryer-Forno-Mondial-Preto/dp/B0BZJDB39Z' },
     { id: 25, area: 'ELETRODOMESTICOS', name: 'Cafeteira Elétrica Electrolux Inox com Timer 1,5L', price: 'R$ 249,87', link: 'https://www.amazon.com.br/Electrolux-ECM30-Cafeteira/dp/B09CC2RYTZ' },
     { id: 26, area: 'ELETRODOMESTICOS', name: 'Lava Louças Electrolux 14 Serviços Preta', price: 'R$ 4.999,00', link: 'https://www.amazon.com.br/Lou%C3%A7as-Electrolux-Servi%C3%A7os-Fun%C3%A3o-Higienizar/dp/B09BBNL8MV' },
-    { id: 27, area: 'ELETRODOMESTICOS', name: 'Lava e Seca Samsung 11kg', price: 'R$ 8.799,00', link: 'https://www.magazineluiza.com.br/lava-e-seca-samsung-11kg' },
+    { id: 27, area: 'ELETRODOMESTICOS', name: 'Lava e Seca Samsung 13kg', price: 'R$ 4.355,01', link: 'https://www.magazineluiza.com.br/lava-e-seca-samsung-13kg-ai-control-wd13fg-digital-inverter-smart-fria-e-quente-inox/p/240787600/ed/ela1/?seller_id=magazineluiza' },
     { id: 28, area: 'ELETRODOMESTICOS', name: 'Ar Condicionado Bi Split Inverter LG 9000 e 12000 BTUs', price: 'R$ 4.679,10', link: 'https://www.amazon.com.br/Condicionado-Split-Inverter-LG-S32Q16UAGA0' },
     { id: 29, area: 'ELETRODOMESTICOS', name: 'Mixer 3 em 1 Electrolux Preto 400W TruFlow', price: 'R$ 179,00', link: 'https://www.mercadolivre.com.br/mixer-3-em-1-electrolux-preto-400w-com-tecnologia-truflow-eib10-220v/p/MLB18455412' },
     { id: 30, area: 'QUARTOS', name: 'Cama Box Baú Casal Bipartido Colchão Comfort Class', price: 'R$ 2.104,21', link: 'https://www.magazineluiza.com.br/cama-box-bau-casal-bipartido-colchao-comfort-class' },
